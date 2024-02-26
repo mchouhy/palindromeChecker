@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #f5f5f7;
+}
+
+.title-container {
+    padding: 50px;
+}
+
+
+.title-h1 span {
+    background: -webkit-linear-gradient(45deg, 
+    #f8ab5e, 
+    #f36961, 
+    #a176c8, 
+    #759beb, 
+    #65beb3, 
+    #70db96);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: 10px;
+}
+
+.palindrome-checker-container {
+    /* background-color: aqua; */
+    z-index: 0;
+    background-color: #fafafc;
+    box-shadow: 4px 5px rgba(0, 0, 0, .02);
+    padding: 20px;
+    margin: 30px 0;
+    min-height: 200px;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    transition: all 350ms ease;
+}
+
+.palindrome-checker-container:hover {
+    transform: scale(1.04);
+}
+
+.palindrome-checker-label {
+    /* background-color: chocolate; */
+    color: #161617;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+.result-div {
+    color: green;
+    padding: 30px;
+    font-size: 1.4rem;
+}
+
+.palindrome-checker-input {
+    /*background-color: chartreuse;*/
+    background-color: #fafafc;
+    height: 33px;
+    width: 250px;
+    font-size: 1.4rem;
+    margin: 10px;
+    border: none;
+    border-bottom: 1px solid #161617;
+}
+
+.palindrome-checker-input:focus {
+    outline: none;
+}
+
+.palindrome-checker-button {
+    background: #161617;
+    color: #fafafc;
+    width: 120px;
+    padding: 5px 0;
+    position: relative;
+    cursor: pointer;
+    border-width: 0.02px;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.palindrome-checker-button:hover {
+    background: #fafafc;
+    color: #161617;
+}
+
+.palindrome-checker-button:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        45deg, 
+        #f8ab5e, 
+        #f36961, 
+        #a176c8, 
+        #759beb, 
+        #65beb3, 
+        #70db96);
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.palindrome-defintion-container {
+    /* background-color: brown; */
+    background-color: #fafafc;
+    box-shadow: 4px 5px rgba(0, 0, 0, .02);
+    padding: 20px;
+    margin: 30px 0;
+    min-height: 200px;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    transition: all 350ms ease;
+}
+
+
+.palindrome-definition-p {
+    /* background-color: aquamarine; */
+    height: 132px;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.palindrome-definition-p span {
+    background: -webkit-linear-gradient(45deg, 
+    #f8ab5e, 
+    #f36961, 
+    #a176c8, 
+    #759beb, 
+    #65beb3, 
+    #70db96);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+.palindrome-defintion-container:hover {
+    transform: scale(1.04);
+}
